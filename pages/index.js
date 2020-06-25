@@ -4,6 +4,7 @@ import Rantings from '../components/Rantings';
 import Image from 'react-bootstrap/Image';
 
 
+export default function Index() {
   return (
     <Layout>
       	<section className="my-5">
