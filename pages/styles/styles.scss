@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'neutraDemi';
+	src: url('./fonts/Neutra2Text-Demi_1-2.otf');
+}
+
+@font-face {
+	font-family: 'neutraLight';
+	src: url('./fonts/Neutra2Text-Light_1.otf');
+}
+
+body {
+	background-color: transparent;
+	color: #000;	
+	font-family: 'neutraLight';
+	font-size: 1.5rem;
+}
+
+a {
+    color: #333;
+    display: block;
+    font-size: 24px;
+    text-decoration: underline;
+    transition: all 250ms ease-in-out;
+
+	&.active {
+	    color: #000;
+	}
+
+	&:hover {
+		color: #000;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+}
+
+hr {
+	color: #87888a;
+}
+
+h1 {
+	color: #000;
+	font-size: 40px;
+}
+
+.nav a.logoR {
+	font-size: 24px;
+	font-family: neutraLight;
+}	  
+
+.hero {
+	text-align: center;
+    position: relative;
+
+	h1 {
+		color: #fff;
+	    font-family: 'neutraDemi';
+	    font-size: 2.0rem;
+	}    
+
+	a {
+		text-decoration: none;
+		color: white;
+	}	
+
+	@media only screen 
+	  and (min-width: 768px)  {
+		h1 {
+		    font-size: 2.5rem;
+		}
+	}	
+
+	> div {
+	    background-color: rgba(0, 0, 0, .65);
+	    font-weight: normal;
+	    margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	    width: 100%;
+	}	
+}
+
+
+article, .slice {
+    background: repeating-linear-gradient( to right, #fbf1d5 , #fbf1d5 10px, #fef8e3 10px, #fef8e3 20px );
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article label {
+    font-weight: bold;
+}
+
+.rantings article time {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+
